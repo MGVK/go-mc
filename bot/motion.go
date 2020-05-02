@@ -56,6 +56,7 @@ func (c *Client) AttackEntity(entityID int32, hand int) error {
 		data.UseEntity,
 		pk.VarInt(entityID),
 		pk.VarInt(1),
+		pk.VarInt(hand),
 	))
 }
 
